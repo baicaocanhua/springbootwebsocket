@@ -58,6 +58,7 @@ public class WebSocketController {
         //第二个参数为用户长连接传的用户人数
         String [] persons = username.split(",");
         SocketServer.SendMany(msg,persons);
+
         return "success";
     }
 
